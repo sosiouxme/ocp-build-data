@@ -1,0 +1,10 @@
+content:
+  source:
+    git:
+      branch:
+        target: fix-spec-file
+      url: git@github.com:sohankunkerkar/kubefed.git
+    specfile: kubefedctl.spec
+name: kubefed-client
+owners:
+- aos-multicluster@redhat.com
