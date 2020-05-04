@@ -1,0 +1,33 @@
+
+---
+
+release: 4.3.19
+advisories:
+  image: 53969
+  rpm: 53968
+  extras: 53970
+  metadata: 53971
+  other:
+    - 1
+    - 2
+state: in-progress
+
+---
+
+release: 4.3.18
+advisories:
+  image: 53969
+  rpm: 53968
+  extras: 53970
+  metadata: 53971
+state: shipped
+
+---
+
+release: 4.3.17
+advisories:
+  image: 53969
+  rpm: 53968
+  extras: 53970
+  metadata: 53971
+state: abandoned
