@@ -1,7 +1,12 @@
 container_yaml:
-  go:
-    modules:
-    - module: github.com/openshift/console
+  remote_source:
+    repo: git@github.com:openshift-priv/console.git
+    ref: release-{MAJOR}.{MINOR}
+    pkg_managers:
+      - yarn
+    packages:
+      yarn:
+        - path: backend
 content:
   source:
     dockerfile: Dockerfile.product
@@ -9,14 +14,13 @@ content:
       branch:
         target: 20211012-console-cachito
       url: git@github.com:sosiouxme/console.git
-    modifications:
-    - action: command
-      command:
-      - update-console-sources
     ci_alignment:
       streams_prs:
         ci_build_root:
           stream: rhel-8-golang-ci-build-root
+    # have cachito read vendored source, not supply it
+    pkg_managers:
+      - gomod
 enabled_repos:
 - rhel-8-baseos-rpms
 - rhel-8-appstream-rpms
