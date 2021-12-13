@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-yarn",
+  "version": "1.0.0",
+  "description": "Workaround to pull Yarn into the build",
+  "author": "Adam Cmiel <acmiel@redhat.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "yarn": "^1.22.10"
+  }
+}
