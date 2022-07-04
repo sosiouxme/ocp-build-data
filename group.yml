@@ -50,6 +50,15 @@ assemblies:
 cachito:
   enabled: true
 
+rhcos:
+  # release_base_url:
+  payload_tags:
+    - name: machine-os-content
+      build_metadata_key: oscontainer
+      primary: true
+    - name: rhel-coreos-8
+      build_metadata_key: base-oscontainer
+
 default_image_build_profile: unsigned
 default_rpm_build_profile: default
 
