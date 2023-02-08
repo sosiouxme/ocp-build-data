@@ -45,17 +45,11 @@ cachito:
 
 rhcos:
   payload_tags:
-    - name: machine-os-content
-      build_metadata_key: oscontainer
-      primary: true
-    - name: rhel-coreos-8
+    - name: rhel-coreos-9
       build_metadata_key: base-oscontainer
-    - name: rhel-coreos-8-extensions
+      primary: true
+    - name: rhel-coreos-9-extensions
       build_metadata_key: extensions-container
-  require_consistency:
-    driver-toolkit:
-    - kernel
-    - kernel-rt
 
 default_image_build_profile: unsigned
 default_rpm_build_profile: default
@@ -68,7 +62,7 @@ urls:
   brew_image_namespace: rh-osbs
   cgit: http://pkgs.devel.redhat.com/cgit
   rhcos_release_base:
-    multi: https://releases-rhcos-art.apps.ocp-virt.prod.psi.redhat.com/storage/prod/streams/{MAJOR}.{MINOR}/builds
+    multi: https://releases-rhcos-art.apps.ocp-virt.prod.psi.redhat.com/storage/prod/streams/{MAJOR}.{MINOR}-9.2/builds
 dist_git_ignore:
   - gating.yaml
 
