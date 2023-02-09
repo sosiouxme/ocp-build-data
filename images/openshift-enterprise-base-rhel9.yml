@@ -55,6 +55,6 @@ labels:
   io.k8s.display-name: OpenShift Container Platform RHEL 9 Base
   io.openshift.tags: openshift,base
   vendor: Red Hat
-name: openshift/ose-base-rhel9
+name: openshift/openshift-enterprise-base-rhel9
 owners:
 - lmeyer@redhat.com
