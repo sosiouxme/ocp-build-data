@@ -41,6 +41,8 @@ content:
       # signal fidelity.
       upstream_image: registry.ci.openshift.org/ocp/{MAJOR}.{MINOR}:base-rhel9
 
+distgit:
+  branch: rhaos-{MAJOR}.{MINOR}-rhel-9
 enabled_repos:
 - rhel-9-baseos-rpms
 - rhel-9-appstream-rpms
