@@ -44,6 +44,7 @@ cachito:
   enabled: true
 
 rhcos:
+  allow_missing_brew_rpms: true
   payload_tags:
     - name: rhel-coreos-9
       build_metadata_key: base-oscontainer
